@@ -1,0 +1,17 @@
+.navbar-brand {
+  font-family: 'Crimson Text', serif;
+}
+
+.card-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: 17rem;
+}
+
+.strikeout {
+  text-decoration: line-through;
+}
