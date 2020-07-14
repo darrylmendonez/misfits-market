@@ -1,16 +1,28 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
 
-const Navbar = () => {
-  return(
-    <nav className="navbar navbar-light bg-light">
-      <div className="container">
-        <span className="navbar-brand mb-0 h1">Misfits Market</span>
-        <div data-toggle="modal" data-target="#exampleModal">
-          <i className="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+class Navbar extends Component {
+  render() {
+    const{ orderSummaryDetails } = this.props
+    return(
+      <nav className="navbar navbar-light bg-light sticky-top">
+        <div className="container">
+          <span className="navbar-brand mb-0 h1">Misfits Market</span>
+          <div className=" grey-text" data-toggle="modal" data-target="#exampleModal">
+            <strong>{orderSummaryDetails.totalNumberOfItems}</strong><i className="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+          </div>
         </div>
-      </div>
-    </nav>
-  )
+      </nav>
+    )
+  }
 }
 
-export default Navbar
+const mapStateToProps = state => {
+  return {
+    items: state.itemData.items,
+    shoppingCart: state.itemData.shoppingCart,
+    orderSummaryDetails: state.itemData.orderSummaryDetails
+  }
+}
+
+export default connect(mapStateToProps)(Navbar)

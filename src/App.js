@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
-import './App.css'
+import './App.scss'
 import Navbar from './Components/Navbar'
 import Items from './Components/Items'
 import ShoppingCart from './Components/ShoppingCart'
 import {store} from './index'
 import { initialItems } from './Store/Actions/itemActions'
-import { incrementQuantity, decrementQuantity } from './Store/Actions/shoppingCartActions'
+import { incrementQuantity, decrementQuantity } from './Store/Actions/itemActions'
 
 class App extends Component {
 
