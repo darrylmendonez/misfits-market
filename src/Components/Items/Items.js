@@ -25,12 +25,10 @@ const Items = (props) => {
                   null
                 ) : (
                   <React.Fragment>
-                    <div className="mt-3">
+                    <div className="mt-4">
                       Add to cart:<br />
                       <i onClick={() => handleDecrement(shoppingCart[item.id], item.id)} className="fa fa-minus-circle yellow-text" aria-hidden="true"></i><span className="mx-2">Qty: { shoppingCart[item.id] }</span><i onClick={() => handleIncrement(item.id)} className="fa fa-plus-circle yellow-text" aria-hidden="true"></i>
-                      {item.justAdded ? (
-                        <span className="text-success">Added!</span>
-                      ) : (null)}
+                      <span className={`text-success ${shoppingCart[item.id] ? 'slide-in-blurred-bottom' : 'slide-out-blurred-top'}`}>Added!</span>
                     </div>
                   </React.Fragment>
                 )}

@@ -5,9 +5,8 @@ import './App.scss'
 import Navbar from './Components/Navbar'
 import Items from './Components/Items'
 import ShoppingCart from './Components/ShoppingCart'
-import {store} from './index'
-import { initialItems } from './Store/Actions/itemActions'
-import { incrementQuantity, decrementQuantity } from './Store/Actions/itemActions'
+import { store } from './index'
+import { initialItems, incrementQuantity, decrementQuantity, hideConfirmationMsg } from './Store/Actions/itemActions'
 
 class App extends Component {
 
@@ -45,12 +44,15 @@ const mapStateToProps = state => {
   return {
     items: state.itemData.items,
     shoppingCart: state.itemData.shoppingCart,
+    userPurchased: state.itemData.userPurchased,
   }
 }
 
 const mapDispatchToProps = dispatch => {
   return {
-    incrementQuantity: id => dispatch( incrementQuantity(id) )
+    incrementQuantity: id => dispatch( incrementQuantity(id) ),
+    decrementQuantity: id => dispatch( decrementQuantity(id) ),
+    hideConfirmationMsg: id => dispatch( hideConfirmationMsg(id) ),
   }
 }
 

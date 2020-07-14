@@ -3,7 +3,7 @@ import imgs from './../../Data/imgs.json'
 export const initialItems = () => {
   const ROOT = 'https://applicant-dev.misfitsmarket.com/api/test/v1'
 
-  return (dispatch, getState) => {
+  return dispatch => {
 
 
     const fetchItems = async () => {
@@ -39,5 +39,18 @@ export const decrementQuantity = id => {
   return {
     type: 'DECREMENT_QUANTITY',
     id
+  }
+}
+
+export const hideConfirmationMsg = id => {
+  return {
+    type: 'HIDE_CONFIRMATION_MSG',
+    id
+  }
+}
+
+export const userPurchasedTrue = () => {
+  return {
+    type: 'USER_PURCHASED_TRUE',
   }
 }
