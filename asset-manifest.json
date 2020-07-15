@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/misfits-market/static/css/main.42d4eeed.chunk.css",
-    "main.js": "/misfits-market/static/js/main.cf80c990.chunk.js",
-    "main.js.map": "/misfits-market/static/js/main.cf80c990.chunk.js.map",
+    "main.css": "/misfits-market/static/css/main.4cf2f728.chunk.css",
+    "main.js": "/misfits-market/static/js/main.4df030f7.chunk.js",
+    "main.js.map": "/misfits-market/static/js/main.4df030f7.chunk.js.map",
     "runtime-main.js": "/misfits-market/static/js/runtime-main.a06bd151.js",
     "runtime-main.js.map": "/misfits-market/static/js/runtime-main.a06bd151.js.map",
     "static/js/2.9b3cca49.chunk.js": "/misfits-market/static/js/2.9b3cca49.chunk.js",
     "static/js/2.9b3cca49.chunk.js.map": "/misfits-market/static/js/2.9b3cca49.chunk.js.map",
     "index.html": "/misfits-market/index.html",
-    "precache-manifest.45b6b5f883a260a1bcbd48dedc6f6a57.js": "/misfits-market/precache-manifest.45b6b5f883a260a1bcbd48dedc6f6a57.js",
+    "precache-manifest.82c88a41e33d77228295f21759d82385.js": "/misfits-market/precache-manifest.82c88a41e33d77228295f21759d82385.js",
     "service-worker.js": "/misfits-market/service-worker.js",
-    "static/css/main.42d4eeed.chunk.css.map": "/misfits-market/static/css/main.42d4eeed.chunk.css.map",
+    "static/css/main.4cf2f728.chunk.css.map": "/misfits-market/static/css/main.4cf2f728.chunk.css.map",
     "static/js/2.9b3cca49.chunk.js.LICENSE.txt": "/misfits-market/static/js/2.9b3cca49.chunk.js.LICENSE.txt",
     "static/media/beets.jpg": "/misfits-market/static/media/beets.7616eabe.jpg",
     "static/media/butternut-squash.jpg": "/misfits-market/static/media/butternut-squash.34c00947.jpg",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.a06bd151.js",
     "static/js/2.9b3cca49.chunk.js",
-    "static/css/main.42d4eeed.chunk.css",
-    "static/js/main.cf80c990.chunk.js"
+    "static/css/main.4cf2f728.chunk.css",
+    "static/js/main.4df030f7.chunk.js"
   ]
 }
