@@ -22,7 +22,7 @@ class ShoppingCart extends Component {
     }, 2000 )
     setTimeout( () => {
       this.setState({smileStatus: true})
-    }, 4000 )
+    }, 5000 )
   }
 
   render() {
