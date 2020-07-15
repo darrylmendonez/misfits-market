@@ -10,7 +10,7 @@ const Items = (props) => {
           <h5 className="card-title">{item.product}</h5>
           <div className="row">
             <div className="col-md-6">
-            <small>MSRP: <span className="strikeout">${item.msrp}</span></small><br/>
+            <small>MSRP: <span className="strikeout">${item.msrp.toFixed(2)}</span></small><br/>
             <strong>Buy: <span>${item.price.toFixed(2)}</span></strong><br/>
             <small>Save: ${(item.msrp - item.price).toFixed(2)}</small>
             {item.soldOut ? (
