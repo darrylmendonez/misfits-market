@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/misfits-market/static/css/main.4cf2f728.chunk.css",
-    "main.js": "/misfits-market/static/js/main.c4054b15.chunk.js",
-    "main.js.map": "/misfits-market/static/js/main.c4054b15.chunk.js.map",
+    "main.js": "/misfits-market/static/js/main.616a9864.chunk.js",
+    "main.js.map": "/misfits-market/static/js/main.616a9864.chunk.js.map",
     "runtime-main.js": "/misfits-market/static/js/runtime-main.a06bd151.js",
     "runtime-main.js.map": "/misfits-market/static/js/runtime-main.a06bd151.js.map",
     "static/js/2.9b3cca49.chunk.js": "/misfits-market/static/js/2.9b3cca49.chunk.js",
     "static/js/2.9b3cca49.chunk.js.map": "/misfits-market/static/js/2.9b3cca49.chunk.js.map",
     "index.html": "/misfits-market/index.html",
-    "precache-manifest.2560bd14c227f11b2b21c972d012ee6c.js": "/misfits-market/precache-manifest.2560bd14c227f11b2b21c972d012ee6c.js",
+    "precache-manifest.e9cf8613dd481a71ed1fb0f85ff2017d.js": "/misfits-market/precache-manifest.e9cf8613dd481a71ed1fb0f85ff2017d.js",
     "service-worker.js": "/misfits-market/service-worker.js",
     "static/css/main.4cf2f728.chunk.css.map": "/misfits-market/static/css/main.4cf2f728.chunk.css.map",
     "static/js/2.9b3cca49.chunk.js.LICENSE.txt": "/misfits-market/static/js/2.9b3cca49.chunk.js.LICENSE.txt",
@@ -28,6 +28,6 @@
     "static/js/runtime-main.a06bd151.js",
     "static/js/2.9b3cca49.chunk.js",
     "static/css/main.4cf2f728.chunk.css",
-    "static/js/main.c4054b15.chunk.js"
+    "static/js/main.616a9864.chunk.js"
   ]
 }
