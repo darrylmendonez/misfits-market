@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/misfits-market/static/css/main.42d4eeed.chunk.css",
+    "main.js": "/misfits-market/static/js/main.cf80c990.chunk.js",
+    "main.js.map": "/misfits-market/static/js/main.cf80c990.chunk.js.map",
+    "runtime-main.js": "/misfits-market/static/js/runtime-main.a06bd151.js",
+    "runtime-main.js.map": "/misfits-market/static/js/runtime-main.a06bd151.js.map",
+    "static/js/2.9b3cca49.chunk.js": "/misfits-market/static/js/2.9b3cca49.chunk.js",
+    "static/js/2.9b3cca49.chunk.js.map": "/misfits-market/static/js/2.9b3cca49.chunk.js.map",
+    "index.html": "/misfits-market/index.html",
+    "precache-manifest.45b6b5f883a260a1bcbd48dedc6f6a57.js": "/misfits-market/precache-manifest.45b6b5f883a260a1bcbd48dedc6f6a57.js",
+    "service-worker.js": "/misfits-market/service-worker.js",
+    "static/css/main.42d4eeed.chunk.css.map": "/misfits-market/static/css/main.42d4eeed.chunk.css.map",
+    "static/js/2.9b3cca49.chunk.js.LICENSE.txt": "/misfits-market/static/js/2.9b3cca49.chunk.js.LICENSE.txt",
+    "static/media/beets.jpg": "/misfits-market/static/media/beets.7616eabe.jpg",
+    "static/media/butternut-squash.jpg": "/misfits-market/static/media/butternut-squash.34c00947.jpg",
+    "static/media/canola-oil.jpg": "/misfits-market/static/media/canola-oil.e3c1d2a1.jpg",
+    "static/media/green-bell-peppers.jpg": "/misfits-market/static/media/green-bell-peppers.371a8bd6.jpg",
+    "static/media/guacamole.jpg": "/misfits-market/static/media/guacamole.9778459d.jpg",
+    "static/media/hen-of-the-wood.jpg": "/misfits-market/static/media/hen-of-the-wood.4baae736.jpg",
+    "static/media/mushrooms.jpg": "/misfits-market/static/media/mushrooms.86fbb50c.jpg",
+    "static/media/pears.jpg": "/misfits-market/static/media/pears.a996c31f.jpg",
+    "static/media/pineapple.jpg": "/misfits-market/static/media/pineapple.db2309a6.jpg",
+    "static/media/pomelo.jpg": "/misfits-market/static/media/pomelo.cfe37dbb.jpg",
+    "static/media/rosemary.jpg": "/misfits-market/static/media/rosemary.765164a0.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a06bd151.js",
+    "static/js/2.9b3cca49.chunk.js",
+    "static/css/main.42d4eeed.chunk.css",
+    "static/js/main.cf80c990.chunk.js"
+  ]
+}
