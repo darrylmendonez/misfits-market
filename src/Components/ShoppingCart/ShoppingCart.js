@@ -67,11 +67,11 @@ class ShoppingCart extends Component {
               {orderSummary}
             </div>
             <div className="modal-footer">
-              {userPurchased ? (<button type="button" className="btn btn-primary" data-dismiss="modal">Start a new order</button>) : (
+              {userPurchased ? (<button type="button" className="btn btn-warning" data-dismiss="modal">Start a new order</button>) : (
                 <button type="button" className="btn btn-secondary" data-dismiss="modal">Continue shopping</button>
               )}
               {orderSummaryDetails.total ? (
-                <button onClick={this.handleClick} type="button" className="btn btn-primary">Buy Now</button>
+                <button onClick={this.handleClick} type="button" className="btn btn-warning">Buy Now</button>
               ) : (null)
               }
             </div>

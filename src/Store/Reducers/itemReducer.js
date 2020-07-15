@@ -7,7 +7,7 @@ const initState = {
     shipping: 0,
     total: 0,
   },
-  userPurchased: false
+  userPurchased: false,
 }
 
 const itemReducer = (state = initState, action) => {

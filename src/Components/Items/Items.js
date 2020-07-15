@@ -11,7 +11,7 @@ const Items = (props) => {
           <div className="row">
             <div className="col-md-6">
             <small>MSRP: <span className="strikeout">${item.msrp}</span></small><br/>
-            <strong>Buy: <span>${item.price}</span></strong><br/>
+            <strong>Buy: <span>${item.price.toFixed(2)}</span></strong><br/>
             <small>Save: ${(item.msrp - item.price).toFixed(2)}</small>
             {item.soldOut ? (
               <div className="text-danger">Sold Out</div>
@@ -25,7 +25,7 @@ const Items = (props) => {
                   null
                 ) : (
                   <React.Fragment>
-                    <div className="mt-4">
+                    <div className="mt-4 disable-select">
                       Add to cart:<br />
                       <i onClick={() => handleDecrement(shoppingCart[item.id], item.id)} className="fa fa-minus-circle yellow-text" aria-hidden="true"></i><span className="mx-2">Qty: { shoppingCart[item.id] }</span><i onClick={() => handleIncrement(item.id)} className="fa fa-plus-circle yellow-text" aria-hidden="true"></i>
                       <span className={`text-success ${shoppingCart[item.id] ? 'slide-in-blurred-bottom' : 'slide-out-blurred-top'}`}>Added!</span>

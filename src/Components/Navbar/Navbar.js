@@ -5,10 +5,10 @@ class Navbar extends Component {
   render() {
     const{ orderSummaryDetails } = this.props
     return(
-      <nav className="navbar navbar-light bg-light sticky-top">
+      <nav className="navbar navbar-light light-grey-bg sticky-top">
         <div className="container">
           <span className="navbar-brand mb-0 h1">Misfits Market</span>
-          <div className=" grey-text" data-toggle="modal" data-target="#exampleModal">
+          <div  className={`${orderSummaryDetails.totalNumberOfItems > 0 ? 'yellow-text' : 'grey-text'}`} data-toggle="modal" data-target="#exampleModal">
             <strong>{orderSummaryDetails.totalNumberOfItems}</strong><i className="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
           </div>
         </div>
