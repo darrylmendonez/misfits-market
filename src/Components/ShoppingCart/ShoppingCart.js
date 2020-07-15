@@ -89,7 +89,12 @@ class ShoppingCart extends Component {
               {orderSummary}
             </div>
             <div className="modal-footer">
-              {userPurchased ? (this.state.submittingOrder ? (<br className="my-5" />) : (<button type="button" className="btn btn-warning" data-dismiss="modal">Start a new order</button>) ) : (
+              {userPurchased ? (this.state.submittingOrder ? (
+              <span>
+                <br /><br />
+              </span>) : (
+              <button type="button" className="btn btn-warning fade-in-fwd" data-dismiss="modal">Start a new order</button>
+              ) ) : (
                 <button type="button" className="btn btn-secondary" data-dismiss="modal">Continue shopping</button>
               )}
               {orderSummaryDetails.total ? (
