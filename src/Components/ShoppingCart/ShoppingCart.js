@@ -5,14 +5,28 @@ import { store } from '../../index'
 import { initialItems, userPurchasedTrue } from '../../Store/Actions/itemActions'
 
 class ShoppingCart extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      submittingOrder: false,
+      smileStatus: false,
+    }
+  }
   handleClick = () => {
+    if (this.state.smileStatus) { this.setState({smileStatus: false}) }
     store.dispatch( initialItems() )
     store.dispatch( userPurchasedTrue() )
+    this.setState({submittingOrder: true})
+    setTimeout( () => {
+      this.setState({submittingOrder: false})
+    }, 2000 )
+    setTimeout( () => {
+      this.setState({smileStatus: true})
+    }, 4000 )
   }
 
   render() {
     const { items, shoppingCart, orderSummaryDetails, userPurchased } = this.props
-    console.log('shoppingCart: ', shoppingCart)
     const selectedItemIds = []
     let shoppingCartArray
     if (shoppingCart !== undefined) {
@@ -33,7 +47,7 @@ class ShoppingCart extends Component {
         </li>
       ))
     ) : (
-      <div>There are no items in your cart</div>
+      <div className="text-center">There are no items in your cart</div>
     )
 
     const calcTotal = selectedItemIds.length ? (
@@ -44,9 +58,17 @@ class ShoppingCart extends Component {
       </li>
     ) : (null)
 
-    const orderSummary = userPurchased ? (
-      <h6 className="text-success tracking-in-expand"><i className="fa fa-check-square-o" aria-hidden="true"></i> Your order has been received!</h6>
-    ) : (
+    const orderSummary = userPurchased ? (this.state.submittingOrder ?
+      (
+        <div className="text-center">
+          <i className="fa fa-spinner fa-spin fa-3x fa-fw yellow-text"></i>
+        </div>
+      ) : (
+        <div className="text-center">
+          <h6 className="text-success tracking-in-expand"><i className="fa fa-check-square-o" aria-hidden="true"></i> Your order has been received!</h6>
+          {this.state.smileStatus ? (<i className="fa fa-smile-o yellow-text fade-in-fwd" aria-hidden="true"></i>) : (<br />)}
+        </div>
+      ) ) : (
       <ul className="list-group">
         {listItems}
         {calcTotal}
