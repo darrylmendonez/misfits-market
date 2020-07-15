@@ -1,6 +1,6 @@
 {
-  "name": "misfits-market-project",
-  "homepage": "http://darrylmendonez.github.io/misfits-market-project",
+  "name": "misfits-market",
+  "homepage": "http://darrylmendonez.github.io/misfits-market",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
